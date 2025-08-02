@@ -1,0 +1,14 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  display: block;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
