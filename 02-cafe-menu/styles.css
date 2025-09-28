@@ -1,4 +1,4 @@
-body {
+ body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
   padding: 20px;
@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+font-size: 30px;
 }
 
 .established {
