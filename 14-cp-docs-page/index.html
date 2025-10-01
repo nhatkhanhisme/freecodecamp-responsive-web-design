@@ -1,0 +1,208 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="freeCodeCamp Accessibility Quiz practice project"
+    />
+    <title>React Web</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>React Reference</header>
+      <ul>
+        <li>
+          <a href="#React_Reference_Overview" class="nav-link"
+            >React Reference Overview</a
+          >
+        </li>
+        <li><a href="#React" class="nav-link">React</a></li>
+        <li><a href="#React_DOM" class="nav-link">React DOM</a></li>
+        <li><a href="#React_Compiler" class="nav-link">React Compiler</a></li>
+        <li>
+          <a href="#ESLint_Plugin_React_Hooks" class="nav-link"
+            >ESLint Plugin React Hooks</a
+          >
+        </li>
+        <li><a href="#Rules_of_React" class="nav-link">Rules of React</a></li>
+        <li><a href="#Legacy_APIs" class="nav-link">Legacy APIs</a></li>
+
+        <li>
+          <a href="#Built-in_React_Hooks" class="nav-link"
+            >Built-in React Hooks</a
+          >
+        </li>
+        <li><a href="#State_Hooks" class="nav-link">State Hooks</a></li>
+        <li><a href="#Context_Hooks" class="nav-link">Context Hooks</a></li>
+      </ul>
+    </nav>
+  </body>
+  <main id="main-doc">
+    <section class="main-section" id="React_Reference_Overview">
+      <header>React Reference Overview</header>
+      <p>
+        This section provides detailed reference documentation for working with
+        React. For an introduction to React, please visit the Learn section.
+      </p>
+      <p>
+        The React reference documentation is broken down into functional
+        subsections:
+      </p>
+    </section>
+    <section class="main-section" id="React">
+      <header>React</header>
+      <p>Programmatic React features:</p>
+      <ul>
+        <li>Hooks - Use different React features from your components.</li>
+        <li>Components - Built-in components that you can use in your JSX.</li>
+        <li>APIs - APIs that are useful for defining components.</li>
+        <li>
+          Directives - Provide instructions to bundlers compatible with React
+          Server Components.
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="React_DOM">
+      <header>React DOM</header>
+      <p>
+        React-dom contains features that are only supported for web applications
+        (which run in the browser DOM environment). This section is broken into
+        the following:
+      </p>
+      <ul>
+        <li>
+          Hooks - Hooks for web applications which run in the browser DOM
+          environment.
+        </li>
+        <li>
+          Components - React supports all of the browser built-in HTML and SVG
+          components.
+        </li>
+        <li>
+          APIs - The react-dom package contains methods supported only in web
+          applications.
+        </li>
+        <li>
+          Client APIs - The react-dom/client APIs let you render React
+          components on the client (in the browser).
+        </li>
+        <li>
+          Server APIs - The react-dom/server APIs let you render React
+          components to HTML on the server.
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="React_Compiler">
+      <header>React Compiler</header>
+      <p>
+        The React Compiler is a build-time optimization tool that automatically
+        memoizes your React components and values:
+      </p>
+      <ul>
+        <li>Configuration - Configuration options for React Compiler.</li>
+        <li>Directives - Function-level directives to control compilation.</li>
+        <li>
+          Compiling Libraries - Guide for shipping pre-compiled library code.
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="ESLint_Plugin_React_Hooks">
+      <header>ESLint Plugin React Hooks</header>
+      <p>The ESLint plugin for React Hooks helps enforce the Rules of React:</p>
+      <ul>
+        <li>Lints - Detailed documentation for each lint with examples.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Rules_of_React">
+      <header>Rules of React</header>
+      <p>
+        React has idioms — or rules — for how to express patterns in a way that
+        is easy to understand and yields high-quality applications:
+      </p>
+      <ul>
+        <li>
+          Components and Hooks must be pure – Purity makes your code easier to
+          understand, debug, and allows React to automatically optimize your
+          components and hooks correctly.
+        </li>
+        <li>
+          React calls Components and Hooks – React is responsible for rendering
+          components and hooks when necessary to optimize the user experience.
+        </li>
+        <li>
+          Rules of Hooks – Hooks are defined using JavaScript functions, but
+          they represent a special type of reusable UI logic with restrictions
+          on where they can be called.
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="Legacy_APIs">
+      <header>Legacy APIs</header>
+      <ul>
+        <li>
+          Legacy APIs - Exported from the react package, but not recommended for
+          use in newly written code.
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="Built-in_React_Hooks">
+      <header>Built-in React Hooks</header>
+      <p>
+        Hooks let you use different React features from your components. You can
+        either use the built-in Hooks or combine them to build your own. This
+        page lists all built-in Hooks in React.
+      </p>
+    </section>
+    <section class="main-section" id="State_Hooks">
+      <header>State Hooks</header>
+      <p>
+        State lets a component “remember” information like user input. For
+        example, a form component can use state to store the input value, while
+        an image gallery component can use state to store the selected image
+        index.
+      </p>
+      <p>To add state to a component, use one of these Hooks:</p>
+      <ul>
+        <li>
+          useState declares a state variable that you can update directly.
+        </li>
+        <li>
+          useReducer declares a state variable with the update logic inside a
+          reducer function.
+        </li>
+      </ul>
+      <code
+        >function ImageGallery() { const [index, setIndex] = useState(0); // ...
+      </code>
+    </section>
+    <section class="main-section" id="Context_Hooks">
+      <header>Context Hooks</header>
+      <p>
+        Context lets a component receive information from distant parents
+        without passing it as props. For example, your app’s top-level component
+        can pass the current UI theme to all components below, no matter how
+        deep.
+      </p>
+      <ul>
+        <li>useContext reads and subscribes to a context.</li>
+      </ul>
+      <code
+        >function Button() { const theme = useContext(ThemeContext); //
+        ...</code
+      >
+      <code>function Form() { const inputRef = useRef(null); // ...</code>
+      <code
+        >function ChatRoom({ roomId }) { useEffect(() => { const connection =
+        createConnection(roomId); connection.connect(); return () =>
+        connection.disconnect(); }, [roomId]); // ...</code
+      >
+      <code
+        >function TodoList({ todos, tab, theme }) { const visibleTodos =
+        useMemo(() => filterTodos(todos, tab), [todos, tab]); // ... }</code
+      >
+      <code>const cachedFn = useCallback(fn, dependencies)</code>
+    </section>
+  </main>
+</html>
