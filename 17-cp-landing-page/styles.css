@@ -1,0 +1,16 @@
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: white;
+  }
+}
+
+#features {
+  display: flex;
+  align-items: space-between;
+}
